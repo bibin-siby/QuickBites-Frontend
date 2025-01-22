@@ -1,0 +1,24 @@
+.Container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .Sub{
+        background-color: lightgray;
+        height: 400px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        
+        .Buttons{
+            background-color: #FF5200;
+            color: lightgray;
+            width: 100px;
+            align-self: center;
+        }
+    }
+}

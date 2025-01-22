@@ -1,0 +1,91 @@
+.Sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex: 1;
+    border-right: 0.5px solid rgb(220, 206, 206); 
+
+    .top{
+        display: flex;
+        align-items: center;
+        height: 35px;
+        justify-content: center;
+
+        .logo{
+            font-size: 20px;
+            color: rgb(104, 20, 104);
+        }
+   
+   }
+   hr {
+    width: 100%; /* Visible width */
+    height: 0; /* Makes it thicker */
+    background-color: rgb(104, 20, 104); /* Matches logo color */
+  }
+  .center{
+    padding-left: 10px;
+    a{
+      text-decoration: none;
+      background-color: aqua;
+      ul{
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          .title{
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #999;
+          }
+          li{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 5px;
+
+            &:hover{
+              background-color: #ccc3c3;
+            }
+
+            .icon{
+              font-size: 18px;
+              color:  rgb(104, 20, 104);
+            }
+            span{
+              font-size: 15px;
+              font-weight: 600;
+              color: #888;
+              margin-left: 10px;
+              
+            }
+          }
+        }
+    }
+  }
+
+  .bottom{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+    .colorOptions{
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      border: 1px solid rgb(104, 20, 104);
+      cursor: pointer;
+      margin: 5px;
+
+      &:nth-child(1){
+        background-color: whitesmoke;
+      }
+      &:nth-child(2){
+        background-color: #888;
+        
+      }
+    }
+  }
+  
+}

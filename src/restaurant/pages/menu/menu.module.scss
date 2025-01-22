@@ -1,0 +1,30 @@
+.Container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .Sub{
+        background-color: lightgray;
+        height: 400px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .Field{
+            width: 200px;
+            margin-left: 15px;
+        }
+        .Status{
+            align-self: flex-start;
+            color: rgb(87, 86, 86);
+        }
+        .Buttons{
+            background-color: #FF5200;
+            color: lightgray;
+            width: 100px;
+            align-self: center;
+        }
+    }
+}

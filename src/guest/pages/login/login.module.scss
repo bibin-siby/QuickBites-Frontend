@@ -1,0 +1,70 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    right: -100%;
+    &.visible{
+        right: 0;
+    }
+    .Main {
+        display: flex;
+        width: 280px;
+        .Heads {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 250px;
+            .Head {
+                height: 100px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .Title {
+                    font-size: 23px;
+                    font-weight: bold;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+
+                .Links {
+                    .Link {
+                        align-self: center;
+                        text-decoration: none;
+                        color: #FF5200;
+                    }
+                }
+            }
+
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+    }
+
+    .Sub {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 270px;
+        border-radius: 15px;
+        .customtextfield {
+            margin-top: 10px;
+            width: 270px;
+        }
+          
+        .Button {
+            background-color: #FF5200;
+            max-width: 100px;
+            align-self: center;
+        }
+        .Policy{
+            font-size: 12px;
+        }
+
+
+    }
+}

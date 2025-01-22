@@ -1,0 +1,30 @@
+.Container{
+    display: flex;
+    color: rgb(24, 24, 24);
+    flex-direction: column;
+    gap: 20px;
+    padding: 8px;
+    .Sub{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .Title{
+            font-size: large;
+            font-weight: bold;
+        }
+        .Column{
+            display: flex;
+            gap: 75px;
+        .Details{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 60px;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+
+        }
+    }
+    }
+}

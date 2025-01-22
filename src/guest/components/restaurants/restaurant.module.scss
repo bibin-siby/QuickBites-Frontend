@@ -1,0 +1,73 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .Column{
+        display: flex;
+    .Card {
+        width: 250px;
+        padding: 9px;
+        transition: transform 0.5s; 
+        .Shadow {
+            box-shadow: inset 0px -25px 80px -0px #181818;
+            opacity: 70%;
+            width: 250px;
+            height: 150px;
+            position: absolute;
+            border-radius: 15px;
+
+        }
+        .Images{
+            .Image{
+                position: relative;
+            }
+            .Discount{
+                position: absolute;
+                color: wheat;
+                z-index: 5px;
+                font-size: large;
+                margin-left: 15px;
+                margin-top:125px ;
+            }
+        }
+
+        .Details {
+            color: rgb(39, 38, 38);
+            display: flex;
+            flex-direction: column;
+            .Title{
+                font-weight: bold;
+                font-family: sans-serif
+            }
+            .Rating {
+                display: flex;
+                height: 30px;
+                width: 170px;
+                align-items: center;
+                gap: 4px;
+                .Rate{
+                    font-weight: bold;
+                }
+                .Icon {
+                    color: #FF5200;
+                    align-self: center;
+                }
+                
+            }
+            .Bottom{
+                color: rgb(116, 114, 114);
+            }
+        }
+
+        img {
+            width: 250px;
+            height: 150px;
+            position: relative;
+            z-index: -2;
+            border-radius: 15px;
+
+        }
+    }
+    .Card:hover { transform: scale(0.95); }
+}
+}
