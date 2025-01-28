@@ -4,8 +4,7 @@ import StarsIcon from '@mui/icons-material/Stars';
 const Restaurants = () => {
     return (
         <div className={Styles.Container}>
-            kjhkj
-            <span className={Styles.Column}>Best Restaurants near you</span>
+            <span className={Styles.Title}>Best Restaurants near you</span>
             <div className={Styles.Column}>
                 <div className={Styles.Card}>
                     <div className={Styles.Shadow}></div>
