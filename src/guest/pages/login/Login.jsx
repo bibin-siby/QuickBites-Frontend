@@ -10,10 +10,6 @@ const Login = () => {
           <div className={Styles.Heads}>
             <div className={Styles.Head}>
               <span className={Styles.Title}>Login</span>
-              <div className={Styles.Links}>
-                <span>or </span>
-                <Link className={Styles.Link} to={'/register'}>create a new account</Link>
-              </div>
             </div>
           </div>
           <img src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Image-login_btpq7r'></img>

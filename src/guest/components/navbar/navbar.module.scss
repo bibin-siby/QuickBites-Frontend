@@ -42,6 +42,12 @@
             display: flex;
             color: rgb(135, 133, 133);
             gap: 7px;
+            .Box{
+                background-color: #FF5200;
+            }
+            .Buttons{
+                color: #FF5200;
+            }
             a{
                 text-decoration: none;
                 color: rgb(135, 133, 133);

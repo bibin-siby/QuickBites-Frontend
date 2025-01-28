@@ -13,6 +13,7 @@ const Index = () => {
     <div className={Styles.Container}>
       <Navbar />
       {/* <Banner/> */}
+      
       <Mind />
       <div className={Styles.Content}>
         <Filter />
