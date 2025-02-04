@@ -1,29 +1,27 @@
 import React, { useState } from 'react'
 import Styles from "./registeration.module.scss"
 import { Box, Button, TextField } from '@mui/material'
-import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 const Registeration = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-   
     try {
-
       const data = {
         name,
         email,
         password
       }
-      const response = await axios.post('http://127.0.0.1:8000/userReg', data)
-      setMessage('Registration successful!');
+      const response = await axios.post('http://127.0.0.1:8000/signIn', data)
       console.log('Registration successful:', response.data);
+      setName("")
+      setEmail("")
+      setPassword("")
     } catch (error) {
-      setMessage('Error registering. Please try again.');
       console.error('Error registering:', error);
     }
   };
@@ -41,7 +39,7 @@ const Registeration = () => {
       </div>
       <Box component={'form'} onSubmit={handleSubmit} className={Styles.Sub}>
         <TextField
-          id="name"
+          id="txtname"
           label="Name"
           variant="standard"
           onChange={(e) => setName(e.target.value)}
@@ -55,7 +53,7 @@ const Registeration = () => {
           }}
         />
         <TextField
-          id="email"
+          id="txtemail"
           label="Email"
           variant="standard"
           onChange={(e) => setEmail(e.target.value)}
@@ -70,7 +68,7 @@ const Registeration = () => {
           }}
         />
         <TextField
-          id="password"
+          id="txtpassword"
           label="Password"
           variant="standard"
           type='password'

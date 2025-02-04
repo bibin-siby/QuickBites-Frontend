@@ -25,14 +25,22 @@
             margin-top: 25px;
             margin-bottom: 10px;
             gap: 30px;
+            // background-color: aqua;
 
-            .Sel {
-                border: none;
-                border-bottom: 1px solid rgb(163, 163, 163);
-                outline: none;
-                color: rgb(94, 94, 94);
-                font-size: 16px;
-            }
+            
+                .Sel {
+                    border: none;
+                    border-bottom: 1px solid rgb(163, 163, 163);
+                    outline: none;
+                    color: rgb(94, 94, 94);
+                    font-size: 16px;
+
+
+                }
+                .Field{
+                    margin-top: -26px;
+                }
+            
 
             .Buttons {
                 width: 90px;
@@ -44,6 +52,7 @@
         .Image {
             margin-top: 20px;
             margin-right: 20px;
+
             img {
                 width: 190px;
             }

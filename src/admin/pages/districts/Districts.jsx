@@ -9,26 +9,23 @@ import axios from 'axios'
 
 const Districts = () => {
   const [check, setCheck] = useState(true)
-    const [name, setName] = useState("")
-  
+  const [name, setName] = useState("")
 
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-     
-      try {
-  
-        const data = {
-          name
-         
-        }
-        const response = await axios.post('http://127.0.0.1:8000/district', data)
-        console.log('district add successful:', response.data);
-        setName("")
-      } catch (error) {
-        console.error('Error registering:', error);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const data = {
+        name
       }
-    };
-  
+      const response = await axios.post('http://127.0.0.1:8000/district', data)
+      console.log('district add successful:', response.data);
+      setName("")
+    } catch (error) {
+      console.error('Error registering:', error);
+    }
+  };
+
   return (
     <MyTheme.Provider value={{ check, setCheck }}>
       <div className={`${check ? 'home light' : 'home dark'}`}>
@@ -38,7 +35,7 @@ const Districts = () => {
           <Box component={'form'} onSubmit={handleSubmit} className={Styles.Container}>
             <div className={Styles.Banner}></div>
             <div className={Styles.Sub}>
-              
+
               <div className={Styles.Text}>
                 <TextField className={Styles.Field} id="standard-basic" value={name} label="District Name" variant="standard" onChange={(e) => setName(e.target.value)} />
                 <Button type='submit' className={Styles.Buttons} variant="contained">Submit</Button>

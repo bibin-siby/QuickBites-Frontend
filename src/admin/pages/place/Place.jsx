@@ -20,6 +20,9 @@ const Place = () => {
                                 <select className={Styles.Sel}>
                                     <option>District</option>
                                 </select>
+                                <select className={Styles.Sel}>
+                                    <option>City</option>
+                                </select>
                                 <TextField className={Styles.Field} id="standard-basic" label="Place Name" variant="standard" />
                                 <Button className={Styles.Buttons} variant="contained">Submit</Button>
                             </div>

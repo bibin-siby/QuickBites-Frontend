@@ -21,8 +21,10 @@ import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import { ExpandLess, ExpandMore, StarBorder } from '@mui/icons-material';
-
-
+import LocationCityIcon from '@mui/icons-material/LocationCity';
+import ApartmentIcon from '@mui/icons-material/Apartment';
+import VillaIcon from '@mui/icons-material/Villa';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
 
@@ -63,6 +65,10 @@ const Sidebar = () => {
                         <SellIcon className="icon" />
                         <span>Orders</span>
                     </li>
+                    <li>
+                        <SellIcon className="icon" />
+                        <span>Categories</span>
+                    </li>
                     <List>
                         <ListItemButton
                             sx={{
@@ -83,25 +89,76 @@ const Sidebar = () => {
                                 primary="Locations"
                                 primaryTypographyProps={{ sx: { fontSize: '14px', color: '#888', fontWeight: '600' } }}
                             />
-                            {open ? <ExpandLess /> : <ExpandMore />}
+                            {open ? (
+                                <ExpandLess style={{ color: "#888", fontSize: "23px" }} />
+                            ) : (
+                                <ExpandMore style={{ color: "#888", fontSize: "23px" }} />
+                            )}
                         </ListItemButton>
                         <Collapse in={open} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>
-                                <ListItemButton>
-                                    <ListItemIcon>
+                                <Link to="/admin/district">
+                                <ListItemButton
+                                    
+                                    sx={{
+                                        padding: '0px 8px',
+                                        marginLeft: '17px',
+                                        minHeight: '25px',
+                                        '&:hover': {
+                                            backgroundColor: '#ccc3c3', // Set your custom hover color
+                                        }
+                                    }}>
+                                    <ListItemIcon
+                                        sx={{ minWidth: 'unset', marginRight: '13px', marginLeft: '-11px' }}>
+                                        <VillaIcon
+                                            sx={{ color: 'rgb(104, 20, 104)', fontSize: '18px' }} />
                                     </ListItemIcon>
-                                    <ListItemText primary="Districts" />
+                                    <ListItemText
+                                        primaryTypographyProps={{ sx: { fontSize: '14px', color: '#888', fontWeight: '600' } }}
+                                        primary="Districts" />
                                 </ListItemButton>
-                                <ListItemButton>
-                                    <ListItemIcon>
+                                        </Link>
+                                   
+                                        <Link  to="/admin/city">
+                                <ListItemButton
+                                    sx={{
+                                        padding: '0px 8px',
+                                        marginLeft: '17px',
+                                        minHeight: '25px',
+                                        '&:hover': {
+                                            backgroundColor: '#ccc3c3', // Set your custom hover color
+                                        }
+                                    }}>
+                                    <ListItemIcon
+                                        sx={{ minWidth: 'unset', marginRight: '13px', marginLeft: '-11px' }}>
+                                        <LocationCityIcon
+                                            sx={{ color: 'rgb(104, 20, 104)', fontSize: '18px' }} />
                                     </ListItemIcon>
-                                    <ListItemText primary="Cities" />
+                                    <ListItemText
+                                        primaryTypographyProps={{ sx: { fontSize: '14px', color: '#888', fontWeight: '600' } }}
+                                        primary="Cities" />
                                 </ListItemButton>
-                                <ListItemButton>
-                                    <ListItemIcon>
+                                </Link>
+                                <Link to="/admin/place">
+                                <ListItemButton
+                                    sx={{
+                                        padding: '0px 8px',
+                                        marginLeft: '17px',
+                                        minHeight: '25px',
+                                        '&:hover': {
+                                            backgroundColor: '#ccc3c3', // Set your custom hover color
+                                        }
+                                    }}>
+                                    <ListItemIcon
+                                        sx={{ minWidth: 'unset', marginRight: '13px', marginLeft: '-11px' }}>
+                                        <ApartmentIcon
+                                            sx={{ color: 'rgb(104, 20, 104)', fontSize: '18px' }} />
                                     </ListItemIcon>
-                                    <ListItemText primary="Places" />
+                                    <ListItemText
+                                        primaryTypographyProps={{ sx: { fontSize: '14px', color: '#888', fontWeight: '600' } }}
+                                        primary="Places" />
                                 </ListItemButton>
+                                </Link>
                             </List>
                         </Collapse>
                     </List>
