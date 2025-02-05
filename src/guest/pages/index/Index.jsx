@@ -12,7 +12,10 @@ const Index = () => {
   return (
     <div className={Styles.Container}>
       <Navbar />
-      <Mind />
+      <Banner />
+      <div className={Styles.Sub}>
+        <Mind />
+      </div>
       <div className={Styles.Content}>
         <Filter />
         <Restaurants />

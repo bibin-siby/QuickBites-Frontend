@@ -1,7 +1,9 @@
 .Container{
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    .Sub{
+    margin-top: 18px;
+    }
     .Content{
         margin-left: 200px;
         gap: 20px;
