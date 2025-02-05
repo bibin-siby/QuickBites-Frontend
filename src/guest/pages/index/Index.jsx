@@ -12,8 +12,6 @@ const Index = () => {
   return (
     <div className={Styles.Container}>
       <Navbar />
-      {/* <Banner/> */}
-      
       <Mind />
       <div className={Styles.Content}>
         <Filter />
