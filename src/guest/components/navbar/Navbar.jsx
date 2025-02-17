@@ -7,6 +7,7 @@ import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
 import { Link } from 'react-router-dom';
 import NavMenu from '../navMenu/NavMenu';
+import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 
 const Navbar = () => {
     
@@ -33,6 +34,14 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className={Styles.link}>
+                    <Link to="/createRestaurant">
+                        <div className={Styles.details}>
+                            <RestaurantMenuIcon className={Styles.icon} />
+                            <span className={Styles.title}>Add Restaurant</span>
+                        </div>
+                    </Link>
+                </div>
+                <div className={Styles.link}>
                     <Link to="/help">
                         <div className={Styles.details}>
                             <HelpIcon className={Styles.icon} />
@@ -40,6 +49,7 @@ const Navbar = () => {
                         </div>
                     </Link>
                 </div>
+
             </div>
         </div>
     );
