@@ -1,0 +1,145 @@
+.Container {
+    .Navbar {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        -webkit-box-shadow: 0px 17px 7px -2px rgba(235, 226, 235, 1);
+        -moz-box-shadow: 0px 17px 7px -2px rgba(235, 226, 235, 1);
+        box-shadow: 0px 17px 7px -2px rgba(235, 226, 235, 1);
+
+        .Logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 30px;
+
+            .Icon {
+                color: #FF5200;
+                font-size: 40px;
+            }
+
+            .Title {
+                color: #FF5200;
+                font-weight: bold;
+            }
+        }
+
+        .Help {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: 30px;
+
+            .Icon {
+                color: #FF5200;
+                font-size: 19px;
+            }
+
+            .Helptext {
+                color: rgb(90, 90, 90);
+            }
+        }
+    }
+
+    .Content {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 30px;
+
+        .Banner {
+            height: 200px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            border: 1px solid gray;
+            border-radius: 9px;
+
+            .Head {
+                padding: 3px;
+                border-bottom: 0.5px solid gray;
+
+                span {
+                    font-size: 21px;
+                    font-weight: bold;
+                    color: rgb(78, 77, 77);
+                }
+            }
+
+            .Details {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                .Cell {
+                    display: flex;
+                    gap: 8px;
+
+                    .Detail {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 7px;
+
+                        .Cellhead {
+                            color: rgb(78, 77, 77);
+                            font-weight: bold;
+                        }
+
+                        .Cellbody {
+                            color: gray;
+                            font-size: 15px;
+                        }
+                    }
+
+                    img {
+                        width: 35px;
+                        padding: 4px;
+                        border-radius: 50%;
+                        border: 1px solid rgb(22, 68, 222);
+                    }
+                }
+            }
+        }
+
+        .Form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            // border: 1px solid gray;
+            // border-radius: 9px;
+            align-items: center;
+            .Headtext{
+                font-size: 30px;
+                font-weight: bold;
+                font-family: 'Okra';
+            }
+            .Field {
+                width: 500px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                margin-left: 20px;
+                border: 1px solid lightgray;
+                border-radius: 10px;
+
+                .Main {
+                    font-size: 21px;
+                }
+
+                .Sub {
+                    color: gray;
+                }
+            }
+
+            .Button {
+                background-color: aqua;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

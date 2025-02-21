@@ -8,11 +8,11 @@ import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import ListIcon from '@mui/icons-material/List';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import './navbar.scss'
-import { MyTheme } from '../../context/ThemeContext';
+// import { MyTheme } from '../../context/ThemeContext';
 
 const Navbar = () => {
-    const{check,setCheck} = useContext(MyTheme)
-    console.log(check);
+    // const{check,setCheck} = useContext(MyTheme)
+    // console.log(check);
   return (
     <div className="navbar">
         <div className="wrapper">
@@ -26,8 +26,8 @@ const Navbar = () => {
                     English
                 </div>
                 <div className="item">
-                    <button  onClick={() =>setCheck((previous) =>!previous)}>{check ? <DarkModeIcon className='icon'/> :<LightModeIcon className='icon'/>}
-                        
+                    {/* <button  onClick={() =>setCheck((previous) =>!previous)}>{check ? <DarkModeIcon className='icon'/> :<LightModeIcon className='icon'/>} */}
+                     <button>  <LightModeIcon className='icon'/> 
                     </button>
                 </div>
                 <div className="item">

@@ -12,7 +12,6 @@ const Index = () => {
   return (
     <div className={Styles.Container}>
       <Navbar />
-      <Banner />
       <div className={Styles.Sub}>
         <Mind />
       </div>

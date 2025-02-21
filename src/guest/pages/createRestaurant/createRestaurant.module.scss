@@ -1,13 +1,14 @@
 .Container {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    font-family: 'Okra' , sans-serif;
-    .Title{
+    font-family: 'Okra', sans-serif;
+
+    .Title {
         width: 100vw;
         height: 600px;
         background-color: #FF5200;
@@ -16,18 +17,21 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-        .Text1{
+
+        .Text1 {
             color: wheat;
             font-size: 40px;
             font-weight: bolder;
             font-family: Okra;
         }
-        .Text2{
+
+        .Text2 {
             color: wheat;
             font-size: 20px;
             font-family: Okra;
         }
-        .Link{
+
+        .Link {
             margin-top: 100px;
             padding: 20px;
             background-color: lightgray;
@@ -38,7 +42,8 @@
             color: #FF5200;
         }
     }
-    .Card{
+
+    .Card {
         display: flex;
         flex-direction: column;
         border: 1px solid darkgray;
@@ -47,37 +52,189 @@
         height: 200px;
         padding: 30px;
         gap: 20px;
-        .Text1{
+
+        .Text1 {
             color: rgb(32, 32, 32);
             font-size: 23px;
             font-weight: bold;
-            
+
         }
-        .Text2{
+
+        .Text2 {
             font-size: 16px;
             color: rgb(72, 72, 72);
         }
-        .Details{
+
+        .Details {
             display: flex;
-            flex-direction: column;
-            gap: 5px;
-            .Detail{
+            gap: 15px;
+
+            .Detail {
                 height: 40px;
                 display: flex;
-                align-items: center;
+                flex-direction: column;
                 gap: 20px;
-                justify-content: space-between;
-                .Cell{
+                justify-content: flex-start;
+
+                .Cell {
                     display: flex;
-                .Text{
-                    align-self: center;
+
+                    .Text {
+                        align-self: center;
+                    }
+
+                    .Icon {
+                        color: green;
+                        font-size: 17x;
+                    }
+
+                    .Videos {
+                        width: 100px;
+                        height: auto;
+                    }
                 }
-                .Icon{
-                    color: green;
-                    font-size: 17x;
-                }
-            }
-            }
             }
         }
     }
+
+
+    .Content {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .Head {
+            span {
+                font-size: 35px;
+                font-weight: bold;
+            }
+        }
+
+        .Column {
+            display: flex;
+            gap: 4px;
+
+            .Cell {
+                width: 450px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                padding: 10px;
+                justify-content: center;
+                align-items: center;
+
+                .Main {
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: gray;
+                }
+
+                img {
+                    width: 100px;
+                }
+
+                .Texts {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .Sub {
+                        font-size: 15px;
+                        color: gray;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+
+    }
+
+    .Stories {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+
+        .Head {
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .Row {
+            display: flex;
+            gap: 10px;
+            .Cell{
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                padding: 20px;
+                background-color: #EDF4FF;
+                gap: 6px;
+                border-radius: 8px;
+                .Story{
+                    font-size: 14px;
+                    color: gray;
+                }
+                .Profile{
+                    display: flex;
+                    gap: 6px;
+                    .Texts{
+                        display: flex;
+                        flex-direction: column;
+                        span{
+                            font-size: 13px;
+                            color: gray;
+                        }
+                    }
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .Questions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        .Title2{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .Column{
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            .Question{
+                width: 1200px;
+                display: flex;
+                flex-direction: column;
+                height: 100px;
+                justify-content: center;
+                gap: 15px;
+                padding: 15px;
+                background-color: #EDF4FF;
+                border-radius: 10px;
+                .Main{
+                    font-size: 19px;
+                    color: #293142;
+                }
+                .Sub{
+                    font-size: 17px;
+                    color: gray;
+                }
+            } 
+        }
+    }
+}

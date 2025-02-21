@@ -15,68 +15,70 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
-  return (
-    <div className='Sidebar'>
-        <div className="top">
-            <span className="logo">Restaurant</span>
-        </div>
-        <hr/>
-        <div className="center">
-            <ul>
-                <p className="title">MAIN</p>
-                <li>
-                    <DashboardIcon className="icon"/>
-                    <span>Dashboard</span>
-                </li>
-                <p className="title">LISTS</p>
-                <li>
-                    <Link to="/restaurant/menu">
-                        <InventoryIcon className="icon"/>
-                        <span>Menu</span>
-                    </Link>
-                </li>
-                <li>
-                    <SellIcon className="icon"/>
-                    <span>Orders</span>
-                </li>
-                <p className="title">USEFUL</p>
-                <li>
-                    <QueryStatsIcon className="icon"/>
-                    <span>Stats</span>
-                </li>
-                <p className="title">SERVICE</p>
-                <li>
-                    <NotificationsIcon className="icon"/>
-                    <span>Notifications</span>
-                </li>
-                <li>
-                    <AssessmentIcon className="icon"/>
-                    <span>Logs</span>
-                </li>
-                <li>
-                    <SettingsIcon className="icon"/>
-                    <span>Settings</span>
-                </li>
-                <p className="title">USER</p>
-                <li>
-                    <AccountBoxIcon className="icon"/>
-                    <span>Profile</span>
-                </li>
-                <li>
-                    <LogoutIcon className="icon"/>
-                    <span>Logout</span>
-                </li>
+    return (
+        <div className='Sidebar'>
+            <div className="top">
+                <span className="logo">Restaurant</span>
+            </div>
+            <hr />
+            <div className="center">
+                <ul>
+                    <p className="title">MAIN</p>
+                    <li>
+                        <DashboardIcon className="icon" />
+                        <span>Dashboard</span>
+                    </li>
+                    <p className="title">LISTS</p>
+                    <li>
+                        <Link to="/restaurant/menu">
+                            <InventoryIcon className="icon" />
+                            <span>Menu</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <SellIcon className="icon" />
+                        <span>Orders</span>
+                    </li>
+                    <p className="title">USEFUL</p>
+                    <li>
+                        <QueryStatsIcon className="icon" />
+                        <span>Stats</span>
+                    </li>
+                    <p className="title">SERVICE</p>
+                    <li>
+                        <NotificationsIcon className="icon" />
+                        <span>Notifications</span>
+                    </li>
+                    <li>
+                        <AssessmentIcon className="icon" />
+                        <span>Logs</span>
+                    </li>
+                    <li>
+                        <SettingsIcon className="icon" />
+                        <span>Settings</span>
+                    </li>
+                    <p className="title">USER</p>
+                    <li>
+                        <Link to="/restaurant/profile">
+                            <AccountBoxIcon className="icon" />
+                            <span>Profile</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <LogoutIcon className="icon" />
+                        <span>Logout</span>
+                    </li>
 
-                
-            </ul>
-        </div>
-        <div className="bottom">
-            <div className="colorOptions"></div>
-            <div className="colorOptions"></div>
-        </div>
 
-    </div>
-  )
+                </ul>
+            </div>
+            <div className="bottom">
+                <div className="colorOptions"></div>
+                <div className="colorOptions"></div>
+            </div>
+
+        </div>
+    )
 }
 
 export default Sidebar
