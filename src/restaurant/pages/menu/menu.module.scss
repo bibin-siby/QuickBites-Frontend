@@ -3,6 +3,14 @@
 
     .homeContainer {
         flex: 6;
+        .List{
+        background-color: whitesmoke;
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 1300px;
+        }
 
     }
 }

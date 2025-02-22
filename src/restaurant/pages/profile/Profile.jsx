@@ -3,6 +3,7 @@ import Styles from './profile.module.scss'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Navbar from '../../components/navbar/Navbar'
 import { Button, TextField } from '@mui/material'
+import ChangePassword from '../changePassword/ChangePassword'
 
 const Profile = () => {
     const [name, setName] = useState("Name")
@@ -36,12 +37,14 @@ const Profile = () => {
                             </div>
 
                         </div>
-                        <div>
+                        <div className={Styles.Buttonsgroup}>
                             <Button
+                                type='submit'
                                 variant="contained"
                                 className={Styles.Buttons}>
                                 Submit
                             </Button>
+                            <ChangePassword />
                         </div>
                     </div>
                 </div>

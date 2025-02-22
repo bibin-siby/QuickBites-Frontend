@@ -27,6 +27,7 @@
                 border-radius: 50%;
                 overflow: hidden;
                 margin-top: 220px;
+
                 img {
                     width: 350px;
                 }
@@ -43,26 +44,34 @@
                 height: 500px;
                 width: 70%;
                 gap: 50px;
-                .Content{
+
+                .Content {
                     display: flex;
                     margin-top: 100px;
                     gap: 20px;
-                    .LabelsContainer{
+
+                    .LabelsContainer {
                         margin-top: 5px;
                         display: flex;
                         flex-direction: column;
                         gap: 18px;
                     }
-                    .FieldsContainer{
+
+                    .FieldsContainer {
                         display: flex;
                         flex-direction: column;
                         gap: 3px;
                     }
-                    
+
                 }
-                .Buttons{
-                    background-color: #738DF3;
-                    color: white;
+
+                .Buttonsgroup {
+                    display: flex;
+                    gap: 20px;
+                    .Buttons {
+                        background-color: #738DF3;
+                        color: white;
+                    }
                 }
             }
         }

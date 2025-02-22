@@ -12,6 +12,7 @@ import AssessmentIcon from '@mui/icons-material/Assessment';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import LogoutIcon from '@mui/icons-material/Logout';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
@@ -31,13 +32,19 @@ const Sidebar = () => {
                     <p className="title">LISTS</p>
                     <li>
                         <Link to="/restaurant/menu">
-                            <InventoryIcon className="icon" />
+                            <MenuBookIcon className="icon" />
                             <span>Menu</span>
                         </Link>
                     </li>
                     <li>
                         <SellIcon className="icon" />
                         <span>Orders</span>
+                    </li>
+                    <li>
+                        <Link to="/restaurant/stock">
+                            <InventoryIcon className="icon" />
+                            <span>Stock</span>
+                        </Link>
                     </li>
                     <p className="title">USEFUL</p>
                     <li>

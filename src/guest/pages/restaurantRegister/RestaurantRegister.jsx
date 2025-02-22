@@ -100,7 +100,7 @@ const RestaurantRegister = () => {
             <TextField id="standard-basic" label="Restaurant Name" variant="standard" value={name} onChange={(e) => setName(e.target.value)} />
           </div>
           <div className={Styles.Field}>
-            <span className={Styles.Main}>Restaurant Name</span>
+            <span className={Styles.Main}>Email</span>
             <span className={Styles.Sub}>Zomato will use this detail for all business communications and updates</span>
             <TextField id="standard-basic" label="Email" variant="standard" value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>

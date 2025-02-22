@@ -58,7 +58,7 @@ const CreateRestaurant = () => {
                         </div>
                     </div>
                     <div className={Styles.Detail}>
-                        {/* <video className={Styles.Videos} src='https://b.zmtcdn.com/data/file_assets/5835a67ef0191da3b505988b3ff9a0141720502359.mp4'></video> */}
+                        <video className={Styles.Videos} src='https://b.zmtcdn.com/data/file_assets/5835a67ef0191da3b505988b3ff9a0141720502359.mp4'></video>
                         <span>Video</span>
                     </div>
                 </div>

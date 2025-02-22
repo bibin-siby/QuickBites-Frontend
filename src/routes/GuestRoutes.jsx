@@ -11,6 +11,7 @@ const GuestRoutes = () => {
         <Route path='/' element={<Index />} />
         <Route path='/createRestaurant' element={<CreateRestaurant />} />
         <Route path='/restaurantRegister' element={<RestaurantRegister />} />
+        <Route path='/dboyRegister' element={<RestaurantRegister />} />
       </Routes>
     </div>
   )
